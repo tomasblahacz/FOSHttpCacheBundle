@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": "^7.3 || ^8.0",
-        "friendsofsymfony/http-cache": "^2.6",
+        "friendsofsymfony/http-cache": "dev-add-exception-request-info",
         "symfony/framework-bundle": "^3.4.26 || ^4.2.7 || ^5.0",
         "symfony/http-foundation": "^3.4.26 || ^4.2.7 || ^5.0",
         "symfony/http-kernel": "^3.4.26 || ^4.2.7 || ^5.0"
@@ -78,5 +78,11 @@
         "branch-alias": {
             "dev-master": "2.x-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "url": "https://github.com/tomasblahacz/FOSHttpCache",
+            "type": "git"
+        }
+    ]
 }
